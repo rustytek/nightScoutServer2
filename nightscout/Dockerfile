@@ -36,6 +36,7 @@ RUN \
         libnginx-mod-http-lua \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
+    && ln -s /usr/bin/python3 /usr/bin/python \
     \
     && git clone --depth 1 --branch ${NIGHTSCOUT_VERSION} https://github.com/nightscout/cgm-remote-monitor.git /opt/app \
     \
