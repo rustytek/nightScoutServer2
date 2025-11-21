@@ -32,8 +32,7 @@ ARG NIGHTSCOUT_VERSION=15.0.2
     \
     && npm install \
     && npm run postinstall \
-    && npm run env \
-    && npm audit fix
+    && npm run env
 
 RUN npm install jsdom@21.1.1
 
